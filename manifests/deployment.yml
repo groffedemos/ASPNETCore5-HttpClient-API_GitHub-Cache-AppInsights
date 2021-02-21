@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: site0 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: site0
+  template:
+    metadata:
+      labels:
+        app: site0 
+    spec:
+      containers:
+        - name: site0 
+          image: anpazdevops.azurecr.io/site0
+          ports:
+          - containerPort: 80
