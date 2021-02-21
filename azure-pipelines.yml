@@ -53,7 +53,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'groffedemosASPNETCore5HttpClientAPIGitHubCacheAppInsights.anptreinamento'
+    environment: 'groffedemosASPNETCore5HttpClientAPIGitHubCacheAppInsights.teste0'
     strategy:
       runOnce:
         deploy:
